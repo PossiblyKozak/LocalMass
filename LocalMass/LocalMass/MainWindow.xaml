@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="310.484" Width="525">
+    <Grid Margin="0,0,-8,-5">
+        <Button x:Name="BtnDownload" Content="Download" HorizontalAlignment="Left" Margin="90,94,0,0" VerticalAlignment="Top" Width="75" Click="BtnDownload_Click"/>
+        <Button x:Name="btnScan" Content="Scan" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="75" Click="btnScan_Click"/>
+        <Button x:Name="btnBrowse" Content="Browse" HorizontalAlignment="Left" Margin="432,40,0,0" VerticalAlignment="Top" Width="75" Click="btnBrowse_Click"/>
+
+        <TextBox x:Name="tbURL" HorizontalAlignment="Left" Height="23" Margin="72,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355"/>
+        <TextBox x:Name="tbSaveLocation" HorizontalAlignment="Left" Height="23" Margin="72,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="355"/>
+
+        <Label x:Name="lblURL" Content="URL:" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="40"/>
+        <Label x:Name="lblLinks" Content="" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDestination" Content="Save To:" HorizontalAlignment="Left" Margin="12,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.82,1.143"/>
+
+        <ListBox x:Name="lbErrors" HorizontalAlignment="Left" Height="150" Margin="12,114,0,0" VerticalAlignment="Top" Width="495"/>
+
+        <ProgressBar Name="pbProgress" HorizontalAlignment="Left" Height="20" Margin="250,94,0,0" VerticalAlignment="Top" Width="257"/>
+
+        <ComboBox x:Name="cbExtension" HorizontalAlignment="Left" Margin="432,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnScanAll" Content="Scan All" HorizontalAlignment="Left" Margin="170,94,0,0" VerticalAlignment="Top" Width="75" Click="btnScanAll_Click"/>
+
+    </Grid>
+</Window>
